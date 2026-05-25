@@ -54,6 +54,7 @@
 
     .logo{
       height:44px;
+      cursor:pointer;
     }
 
     .login-btn{
@@ -309,6 +310,7 @@
     .footer img{
       height:40px;
       margin-bottom:15px;
+      cursor:pointer;
     }
 
     .footer p{
@@ -364,6 +366,7 @@
         src="https://adveasy.com.br/wp-content/uploads/2023/01/result-3.svg"
         class="logo"
         alt="AdvEasy"
+        onclick="goHome()"
       >
 
       <a
@@ -711,6 +714,114 @@
 
   </section>
 
+  <!-- EASYDOC -->
+
+  <section class="faq-page" id="easydoc">
+
+    <div class="back-btn" onclick="goHome()">
+      ← Voltar
+    </div>
+
+    <div class="breadcrumb">
+      Todas as coleções > EasyDoc
+    </div>
+
+    <div class="faq-header">
+
+      <div class="faq-header-icon">📄</div>
+
+      <div>
+        <h1>EasyDoc</h1>
+        <p>Gestão de documentos jurídicos</p>
+      </div>
+
+    </div>
+
+    <div class="faq-box">
+
+      <div class="faq-item active">
+
+        <button class="faq-question">
+          <h3>Conteúdo em atualização</h3>
+          <span class="faq-arrow">›</span>
+        </button>
+
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+
+            Estamos preparando os artigos desta categoria.
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- EASYPAY -->
+
+  <section class="faq-page" id="easypay">
+
+    <div class="back-btn" onclick="goHome()">
+      ← Voltar
+    </div>
+
+    <div class="breadcrumb">
+      Todas as coleções > EasyPay
+    </div>
+
+    <div class="faq-header">
+
+      <div class="faq-header-icon">💰</div>
+
+      <div>
+        <h1>EasyPay</h1>
+        <p>Pagamentos e movimentações financeiras</p>
+      </div>
+
+    </div>
+
+    <div class="faq-box">
+
+      <div class="faq-item active">
+
+        <button class="faq-question">
+          <h3>Conteúdo em atualização</h3>
+          <span class="faq-arrow">›</span>
+        </button>
+
+        <div class="faq-answer">
+          <div class="faq-answer-content">
+
+            Estamos preparando os artigos desta categoria.
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer class="footer">
+
+    <img
+      src="https://adveasy.com.br/wp-content/uploads/2023/01/result-3.svg"
+      alt="AdvEasy"
+      onclick="goHome()"
+    >
+
+    <p>
+      © 2026 AdvEasy. Todos os direitos reservados.
+    </p>
+
+  </footer>
+
   <!-- SCRIPT -->
 
   <script>
@@ -729,7 +840,7 @@
 
     });
 
-    // OPEN PAGE
+    // ABRIR PAGINA
 
     function openPage(id){
 
@@ -745,7 +856,7 @@
 
     }
 
-    // HOME
+    // VOLTAR HOME
 
     function goHome(){
 
@@ -757,11 +868,15 @@
 
       document.getElementById('searchInput').value = '';
 
+      document.querySelectorAll('.category-card').forEach(card => {
+        card.style.display = 'block';
+      });
+
       window.scrollTo(0,0);
 
     }
 
-    // SEARCH
+    // PESQUISA
 
     const searchInput = document.getElementById('searchInput');
 
