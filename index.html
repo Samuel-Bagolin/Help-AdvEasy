@@ -151,16 +151,15 @@
       gap:18px;
     }
 
+    /* ALTERAÇÃO DOS ÍCONES */
+
     .card-icon{
       width:70px;
       height:70px;
-      min-width:70px;
-      min-height:70px;
-      max-width:70px;
-      max-height:70px;
-
       border-radius:18px;
-      background:#111827;
+
+      background:#ffffff;
+      border:2px solid #c8a24d;
 
       display:flex;
       align-items:center;
@@ -208,20 +207,21 @@
       margin-bottom:40px;
     }
 
+    /* ALTERAÇÃO DOS ÍCONES */
+
     .faq-header-icon{
       width:90px;
       height:90px;
-      min-width:90px;
-      min-height:90px;
-      max-width:90px;
-      max-height:90px;
-
       border-radius:22px;
-      background:#111827;
+
+      background:#ffffff;
+      border:2px solid #c8a24d;
 
       display:flex;
       align-items:center;
       justify-content:center;
+
+      flex-shrink:0;
     }
 
     .faq-header-icon img{
@@ -357,8 +357,6 @@
 
 <body>
 
-  <!-- HEADER -->
-
   <header class="header">
 
     <div class="header-content">
@@ -382,8 +380,6 @@
 
   </header>
 
-  <!-- HERO -->
-
   <section class="hero">
 
     <div class="hero-content">
@@ -404,15 +400,11 @@
 
   </section>
 
-  <!-- HOME -->
-
   <section id="homePage">
 
     <div class="categories"></div>
 
   </section>
-
-  <!-- FIREBASE -->
 
   <script type="module">
 
@@ -439,10 +431,6 @@
     const db = getFirestore(app);
 
     let pages = [];
-
-    // =========================
-    // RENDER HOME
-    // =========================
 
     function renderHomePages(){
 
@@ -509,10 +497,6 @@
       });
 
     }
-
-    // =========================
-    // RENDER FAQ
-    // =========================
 
     function renderFaqPages(){
 
@@ -635,10 +619,6 @@
 
     }
 
-    // =========================
-    // FAQ EVENTS
-    // =========================
-
     function bindFaqEvents(){
 
       document.querySelectorAll('.faq-question').forEach(question => {
@@ -654,10 +634,6 @@
       });
 
     }
-
-    // =========================
-    // OPEN PAGE
-    // =========================
 
     window.openPage = function(id){
 
@@ -677,10 +653,6 @@
 
     }
 
-    // =========================
-    // HOME
-    // =========================
-
     window.goHome = function(){
 
       document.querySelectorAll('.faq-page').forEach(page => {
@@ -698,10 +670,6 @@
       window.scrollTo(0,0);
 
     }
-
-    // =========================
-    // SEARCH
-    // =========================
 
     const searchInput =
       document.getElementById('searchInput');
@@ -732,10 +700,6 @@
       });
 
     });
-
-    // =========================
-    // FIREBASE REALTIME
-    // =========================
 
     onSnapshot(collection(db,"pages"), snapshot => {
 
