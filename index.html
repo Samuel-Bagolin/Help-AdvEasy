@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Central de Ajuda - AdvEasy</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -164,6 +166,12 @@
       flex-shrink:0;
     }
 
+    .card-icon img{
+      width:34px;
+      height:34px;
+      object-fit:contain;
+    }
+
     .card-text h2{
       font-size:30px;
       margin-bottom:10px;
@@ -206,9 +214,12 @@
       display:flex;
       align-items:center;
       justify-content:center;
+    }
 
-      color:#fff;
-      font-size:34px;
+    .faq-header-icon img{
+      width:42px;
+      height:42px;
+      object-fit:contain;
     }
 
     .faq-header h1{
@@ -353,7 +364,9 @@
     }
 
   </style>
+
 </head>
+
 <body>
 
   <!-- HEADER -->
@@ -407,402 +420,7 @@
 
   <section id="homePage">
 
-    <div class="categories">
-
-      <div class="category-card" onclick="openPage('disponibilidade')">
-
-        <div class="card-top">
-
-          <div class="card-icon">⚙</div>
-
-          <div class="card-text">
-            <h2>Disponibilidade</h2>
-            <p>Gerencie sua ausência e funcionamento da plataforma.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('easyconnect')">
-
-        <div class="card-top">
-
-          <div class="card-icon">💬</div>
-
-          <div class="card-text">
-            <h2>Easy Connect</h2>
-            <p>Atendimentos, leads e conversão de clientes.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('easyflow')">
-
-        <div class="card-top">
-
-          <div class="card-icon">📋</div>
-
-          <div class="card-text">
-            <h2>EasyFlow</h2>
-            <p>Cadastro e requisitos da plataforma.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('easydoc')">
-
-        <div class="card-top">
-
-          <div class="card-icon">📄</div>
-
-          <div class="card-text">
-            <h2>EasyDoc</h2>
-            <p>Gestão de documentos jurídicos.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('easypay')">
-
-        <div class="card-top">
-
-          <div class="card-icon">💰</div>
-
-          <div class="card-text">
-            <h2>EasyPay</h2>
-            <p>Pagamentos e movimentações financeiras.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('assinatura')">
-
-        <div class="card-top">
-
-          <div class="card-icon">🚀</div>
-
-          <div class="card-text">
-            <h2>Plano de Assinatura</h2>
-            <p>Upgrade e downgrade de planos.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('cartoes')">
-
-        <div class="card-top">
-
-          <div class="card-icon">💳</div>
-
-          <div class="card-text">
-            <h2>Meus Cartões</h2>
-            <p>Gerencie cartões cadastrados.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="category-card" onclick="openPage('creditos')">
-
-        <div class="card-top">
-
-          <div class="card-icon">⭐</div>
-
-          <div class="card-text">
-            <h2>Créditos e Planos</h2>
-            <p>Consumo, validade e funcionamento.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- DISPONIBILIDADE -->
-
-  <section class="faq-page" id="disponibilidade">
-
-    <div class="back-btn" onclick="goHome()">
-      ← Voltar
-    </div>
-
-    <div class="breadcrumb">
-      Todas as coleções > Disponibilidade
-    </div>
-
-    <div class="faq-header">
-
-      <div class="faq-header-icon">⚙</div>
-
-      <div>
-        <h1>Disponibilidade</h1>
-        <p>Funcionamento da plataforma</p>
-      </div>
-
-    </div>
-
-    <div class="faq-box">
-
-      <div class="faq-item active">
-
-        <button class="faq-question">
-          <h3>Quanto tempo tenho para responder uma chamada?</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            O prazo máximo para aceitar e iniciar contato é de até
-            <strong>20 minutos</strong>.
-
-            <br><br>
-
-            Após aproximadamente
-            <strong>5 minutos sem ação</strong>,
-            o sistema pode iniciar replicação.
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          <h3>Por que perdi uma chamada mesmo estando online?</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            A chamada pode ter sido aceita por outro advogado
-            ou replicada devido ausência de interação.
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- EASY CONNECT -->
-
-  <section class="faq-page" id="easyconnect">
-
-    <div class="back-btn" onclick="goHome()">
-      ← Voltar
-    </div>
-
-    <div class="breadcrumb">
-      Todas as coleções > Easy Connect
-    </div>
-
-    <div class="faq-header">
-
-      <div class="faq-header-icon">💬</div>
-
-      <div>
-        <h1>Easy Connect</h1>
-        <p>Atendimentos e leads</p>
-      </div>
-
-    </div>
-
-    <div class="faq-box">
-
-      <div class="faq-item active">
-
-        <button class="faq-question">
-          <h3>Onde recebo os leads?</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            Os leads ficam disponíveis no menu
-            <strong>"Encontre clientes"</strong>.
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="faq-item">
-
-        <button class="faq-question">
-          <h3>Qual é a melhor forma de abordar o cliente?</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            Utilize mensagens claras, rápidas e profissionais.
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- EASYFLOW -->
-
-  <section class="faq-page" id="easyflow">
-
-    <div class="back-btn" onclick="goHome()">
-      ← Voltar
-    </div>
-
-    <div class="breadcrumb">
-      Todas as coleções > EasyFlow
-    </div>
-
-    <div class="faq-header">
-
-      <div class="faq-header-icon">📋</div>
-
-      <div>
-        <h1>EasyFlow</h1>
-        <p>Cadastro e requisitos</p>
-      </div>
-
-    </div>
-
-    <div class="faq-box">
-
-      <div class="faq-item active">
-
-        <button class="faq-question">
-          <h3>Posso cadastrar mais de uma especialidade?</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            Sim. Desde que estejam alinhadas com sua atuação profissional.
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- EASYDOC -->
-
-  <section class="faq-page" id="easydoc">
-
-    <div class="back-btn" onclick="goHome()">
-      ← Voltar
-    </div>
-
-    <div class="breadcrumb">
-      Todas as coleções > EasyDoc
-    </div>
-
-    <div class="faq-header">
-
-      <div class="faq-header-icon">📄</div>
-
-      <div>
-        <h1>EasyDoc</h1>
-        <p>Gestão de documentos jurídicos</p>
-      </div>
-
-    </div>
-
-    <div class="faq-box">
-
-      <div class="faq-item active">
-
-        <button class="faq-question">
-          <h3>Conteúdo em atualização</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            Estamos preparando os artigos desta categoria.
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- EASYPAY -->
-
-  <section class="faq-page" id="easypay">
-
-    <div class="back-btn" onclick="goHome()">
-      ← Voltar
-    </div>
-
-    <div class="breadcrumb">
-      Todas as coleções > EasyPay
-    </div>
-
-    <div class="faq-header">
-
-      <div class="faq-header-icon">💰</div>
-
-      <div>
-        <h1>EasyPay</h1>
-        <p>Pagamentos e movimentações financeiras</p>
-      </div>
-
-    </div>
-
-    <div class="faq-box">
-
-      <div class="faq-item active">
-
-        <button class="faq-question">
-          <h3>Conteúdo em atualização</h3>
-          <span class="faq-arrow">›</span>
-        </button>
-
-        <div class="faq-answer">
-          <div class="faq-answer-content">
-
-            Estamos preparando os artigos desta categoria.
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
+    <div class="categories"></div>
 
   </section>
 
@@ -826,21 +444,232 @@
 
   <script>
 
-    // FAQ OPEN
+    // =========================
+    // DADOS DINÂMICOS
+    // =========================
 
-    document.querySelectorAll('.faq-question').forEach(question => {
+    let pages = JSON.parse(
+      localStorage.getItem("adveasy_help_pages")
+    ) || [];
 
-      question.addEventListener('click', () => {
+    // =========================
+    // RENDER HOME
+    // =========================
 
-        const item = question.parentElement;
+    function renderHomePages(){
 
-        item.classList.toggle('active');
+      const categories =
+        document.querySelector(".categories");
+
+      categories.innerHTML = "";
+
+      if(pages.length === 0){
+
+        categories.innerHTML = `
+
+          <div
+            style="
+              width:100%;
+              padding:80px 20px;
+              text-align:center;
+              color:#64748b;
+              grid-column:1/-1;
+            "
+          >
+
+            Nenhuma página cadastrada.
+
+          </div>
+
+        `;
+
+        return;
+
+      }
+
+      pages.forEach(page => {
+
+        categories.innerHTML += `
+
+          <div
+            class="category-card"
+            onclick="openPage('${page.id}')"
+          >
+
+            <div class="card-top">
+
+              <div class="card-icon">
+
+                <img src="${page.icon}">
+
+              </div>
+
+              <div class="card-text">
+
+                <h2>${page.name}</h2>
+
+                <p>${page.desc}</p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        `;
 
       });
 
-    });
+    }
 
-    // ABRIR PAGINA
+    // =========================
+    // RENDER FAQ
+    // =========================
+
+    function renderFaqPages(){
+
+      document.querySelectorAll(".faq-page").forEach(el => {
+        el.remove();
+      });
+
+      pages.forEach(page => {
+
+        let questionsHTML = "";
+
+        if(page.questions.length === 0){
+
+          questionsHTML = `
+
+            <div class="faq-item active">
+
+              <button class="faq-question">
+
+                <h3>Conteúdo em atualização</h3>
+
+                <span class="faq-arrow">›</span>
+
+              </button>
+
+              <div class="faq-answer">
+
+                <div class="faq-answer-content">
+
+                  Estamos preparando os artigos desta categoria.
+
+                </div>
+
+              </div>
+
+            </div>
+
+          `;
+
+        }else{
+
+          page.questions.forEach(question => {
+
+            questionsHTML += `
+
+              <div class="faq-item">
+
+                <button class="faq-question">
+
+                  <h3>${question.title}</h3>
+
+                  <span class="faq-arrow">›</span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                  <div class="faq-answer-content">
+
+                    ${question.answer}
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            `;
+
+          });
+
+        }
+
+        document.body.insertAdjacentHTML(
+          "beforeend",
+          `
+
+          <section class="faq-page" id="${page.id}">
+
+            <div class="back-btn" onclick="goHome()">
+              ← Voltar
+            </div>
+
+            <div class="breadcrumb">
+              Todas as coleções > ${page.name}
+            </div>
+
+            <div class="faq-header">
+
+              <div class="faq-header-icon">
+
+                <img src="${page.icon}">
+
+              </div>
+
+              <div>
+
+                <h1>${page.name}</h1>
+
+                <p>${page.desc}</p>
+
+              </div>
+
+            </div>
+
+            <div class="faq-box">
+
+              ${questionsHTML}
+
+            </div>
+
+          </section>
+
+          `
+        );
+
+      });
+
+      bindFaqEvents();
+
+    }
+
+    // =========================
+    // FAQ EVENTS
+    // =========================
+
+    function bindFaqEvents(){
+
+      document.querySelectorAll('.faq-question').forEach(question => {
+
+        question.addEventListener('click', () => {
+
+          const item = question.parentElement;
+
+          item.classList.toggle('active');
+
+        });
+
+      });
+
+    }
+
+    // =========================
+    // OPEN PAGE
+    // =========================
 
     function openPage(id){
 
@@ -850,13 +679,19 @@
         page.style.display = 'none';
       });
 
-      document.getElementById(id).style.display = 'block';
+      const target = document.getElementById(id);
+
+      if(target){
+        target.style.display = 'block';
+      }
 
       window.scrollTo(0,0);
 
     }
 
-    // VOLTAR HOME
+    // =========================
+    // HOME
+    // =========================
 
     function goHome(){
 
@@ -876,29 +711,61 @@
 
     }
 
-    // PESQUISA
+    // =========================
+    // SEARCH
+    // =========================
 
-    const searchInput = document.getElementById('searchInput');
+    const searchInput =
+      document.getElementById('searchInput');
 
     searchInput.addEventListener('keyup', function(){
 
-      const value = this.value.toLowerCase();
+      const value =
+        this.value.toLowerCase();
 
-      const cards = document.querySelectorAll('.category-card');
+      const cards =
+        document.querySelectorAll('.category-card');
 
       cards.forEach(card => {
 
-        const text = card.innerText.toLowerCase();
+        const text =
+          card.innerText.toLowerCase();
 
         if(text.includes(value)){
+
           card.style.display = 'block';
+
         }else{
+
           card.style.display = 'none';
+
         }
 
       });
 
     });
+
+    // =========================
+    // REALTIME UPDATE
+    // =========================
+
+    window.addEventListener("storage", () => {
+
+      pages = JSON.parse(
+        localStorage.getItem("adveasy_help_pages")
+      ) || [];
+
+      renderHomePages();
+      renderFaqPages();
+
+    });
+
+    // =========================
+    // INIT
+    // =========================
+
+    renderHomePages();
+    renderFaqPages();
 
   </script>
 
